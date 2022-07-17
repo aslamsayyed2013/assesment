@@ -1,0 +1,11 @@
+<p>machine works!</p>
+
+<select style="width:100px;" [(ngModel)]="selectedValue" (change)="getDetails()">
+  <option *ngFor="let dt of data" value={{dt}}>{{dt}}</option>
+</select>
+
+<div width="200" height="200">
+  <canvas id="canvas">{{chart}}</canvas>
+</div>
+
+
